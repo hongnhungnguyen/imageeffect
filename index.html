@@ -1,0 +1,272 @@
+<!--Author: Nguyen Hong Nhung-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Photo</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="jquery/main.js">
+
+    </script>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+
+        <div id="marquee">
+            <marquee behavior="scroll" direction="left" scrollamount="5"><p class="marquee"> Never frown, even when you
+                are sad, because you never know who is falling in love with your smile.</p></marquee>
+
+        </div>
+
+        <ul class="menu">
+            <li id="home"><a>Home</a></li>
+            <li id="about"><a>About</a></li>
+            <li id="contact"><a>News</a></li>
+            <li id="member"><a>Member</a></li>
+
+        </ul>
+        <div id="border"></div>
+        <div id="audio">
+            <p>Kiss The Rain</p>
+            <audio src="audio/04.%20Kiss%20The%20Rain.mp3" controls/>
+        </div>
+        <div class="datepicker">
+            <p>Date: <input type="text" id="datepicker" size="10px"></p>
+        </div>
+
+    </div>
+    <!-- End header-->
+    <div class="content">
+        <div class="photoShow">
+            <div class="current">
+                <a href="#">
+                    <img class="img-rounded box10" src="img/11.JPG" alt=""></a>
+            </div>
+            <div>
+                <a href="">
+                    <img class="img-rounded" src="img/12.JPG" alt=""></a></div>
+            <div>
+                <a href="">
+                    <img class="img-rounded" src="img/10.jpg" alt=""></a></div>
+            <div>
+                <a href="">
+                    <img class="img-rounded" src="img/06.jpg" alt=""></a></div>
+            <div>
+                <a href="">
+                    <img class="img-rounded" src="img/07.JPG" alt=""></a></div>
+            <div>
+                <a href="">
+                    <img class="img-rounded" src="img/08.jpg" alt=""></a></div>
+
+        </div>
+        <!--homeContent-->
+        
+        <div class="home">
+            <div class="toggler">
+                <div id="effect" class="ui-widget-content ui-corner-all">
+                    <div class="photo1">
+                        <h4>Nature</h4>
+                        <div class="border1"></div>
+                        <div class="imgContent" id="demo-2">
+                            <img class="box13" src="img/n1.jpg">
+                            <img class="box13" src="img/n2.jpg">
+                            <img class="box13" src="img/n3.jpg">
+                            <img class="box13" src="img/n4.jpg">
+                            <img class="box13" src="img/n5.jpg">
+                            <img class="box13" src="img/n6.jpg">
+                        </div>
+
+
+                </div>
+            </div>
+
+            <select name="effects" id="effectTypes">
+                <option value="blind">Blind</option>
+                <option value="bounce">Bounce</option>
+                <option value="clip">Clip</option>
+                <option value="drop">Drop</option>
+                <option value="explode">Explode</option>
+                <option value="fade">Fade</option>
+                <option value="fold">Fold</option>
+                <option value="highlight">Highlight</option>
+                <option value="puff">Puff</option>
+                <option value="pulsate">Pulsate</option>
+                <option value="scale">Scale</option>
+                <option value="shake">Shake</option>
+                <option value="size">Size</option>
+                <option value="slide">Slide</option>
+                <option value="transfer">Transfer</option>
+            </select>
+
+            <button id="button" class="btn btn-danger">Run Effect</button>
+
+            <div class="photo2">
+            <h4>Nature</h4>
+            <div class="border1"></div>
+            <div class="imgContent" id="demo-3">
+                <img class="box13" src="img/n1.jpg">
+                <img class="box13" src="img/n2.jpg">
+                <img class="box13" src="img/n3.jpg">
+                <img class="box13" src="img/n4.jpg">
+                <img class="box13" src="img/n5.jpg">
+                <img class="box13" src="img/n6.jpg">
+            </div>
+            <div class="hidden-show">
+                <button id="hidden2" class="btn btn-success">Hiden</button>
+                <button id="show2" class="btn btn-info">Show</button>
+            </div>
+        </div><div class="photo3">
+            <h4>Nature</h4>
+            <div class="border1"></div>
+            <div class="imgContent" id="demo-4" >
+                <img class="box13" src="img/n1.jpg">
+                <img class="box13" src="img/n2.jpg">
+                <img class="box13" src="img/n3.jpg">
+                <img class="box13" src="img/n4.jpg">
+                <img class="box13" src="img/n5.jpg">
+                <img class="box13" src="img/n6.jpg">
+            </div>
+            <div class="hidden-show">
+                <button id="fadein" class="btn btn-primary">Fade In</button>
+                <button id="fadeout" class="btn btn-success">Fade Out</button>
+                <button id="fadeto3" class="btn btn-info">Fade To .3</button>
+                <button id="fadeup" class="btn btn-success">Back</button>
+            </div>
+        </div>
+        </div>
+            </div>
+        <!--/homeContent-->
+        <!--aboutContent-->
+        <div class="about">
+            <blockquote>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <footer> Lorem ipsum<cite title="Lorem ipsum">Lorem ipsum</cite></footer>
+            </blockquote>
+            <blockquote>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <footer> Lorem ipsum<cite title="Lorem ipsum">Lorem ipsum</cite></footer>
+            </blockquote>
+            <blockquote>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <footer> Lorem ipsum<cite title="Lorem ipsum">Lorem ipsum</cite></footer>
+            </blockquote>
+            <blockquote>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <footer> Lorem ipsum<cite title="Lorem ipsum">Lorem ipsum</cite></footer>
+            </blockquote>
+        </div>
+        <!--/aboutContent-->
+        <!--contactContent-->
+        
+        <div class="contact">
+            <h2>My story</h2>
+
+            <div id="theDiv">
+
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+            <button id="right" class="btn btn-success">Grow Right</button>
+            <button id="text" class="btn btn-success">Big Text</button>
+            <button id="toggle" class="btn btn-success">Move</button>
+            <button id="back" class="btn btn-success">Back</button>
+        </div>
+        <!--/contactContent-->
+        <!--memberContent-->
+        <div class="member">
+            <div class="member-item demo-5" id="draggable" >
+                <img  class="box4" src="img/nhung1.jpg" height="200px" >
+                <img class="box4" src="img/nhung.jpg" height="200px">
+
+                <img  class="box4"  src="img/nhung2.jpg" height="200px">
+
+            </div>
+
+            <div class="member-info">
+                <a href="#login-box1" class="login-window button" id="info">Thông tin</a>
+                <div id="login-box1" class="login">
+                    <p class="login_title">Thông tin thành viên </p>
+                    <a href="#" class="close"><img src="close.png" class="img-close" title="Close Window" alt="Close" /></a>
+                    <form method="post" class="login-content" action="#">
+                        <label class="username">
+                            <span>Nguyễn Thị Hồng Nhung</span>
+
+                        </label>
+                        <label class="password">
+                            <span>hongnhung@elasticprovision.com </span>
+                        </label>
+                        <p>
+                            <a class="forgot" href="#">:)))))))))))))))))</a>
+                        </p>
+                    </form>
+                </div>
+
+            <div class="member-login">
+                <a href="#login-box" class="login-window button">Đăng nhập</a>
+                <div id="login-box" class="login">
+                    <p class="login_title"> Đăng nhập</p>
+                    <a href="#" class="close"><img src="close.png" class="img-close" title="Close Window" alt="Close" /></a>
+                    <form method="post" class="login-content" action="#">
+                        <label class="username">
+                            <span>Tên hoặc email</span>
+                            <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username">
+                        </label>
+                        <label class="password">
+                            <span>Mật khẩu</span>
+                            <input id="password" name="password" value="" type="password" placeholder="Password">
+                        </label>
+                        <button class="button submit-button" type="button">Đăng nhập</button>
+                        <p>
+                            <a class="forgot" href="#">Quên mật khẩu?</a>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <!--/memberContent-->
+        
+        
+    </div>
+    <!-- End content-->
+    <div class="footer">
+        <div class="address">
+            <address>
+                <strong>Hồng Nhung </strong><br>
+                Số 7 - Tạ Qang Bửu<br>
+                <abbr title="Phone">P:</abbr> 01649091989
+            </address>
+
+            <address>
+                <strong>Nguyễn Thị Hồng Nhung</strong><br>
+                <a href="mailto:#"> hongnhung@elasticprovision.com</a>
+            </address>
+        </div>
+
+    </div>
+    <!-- End footer-->
+</div>
+</body>
+</html>
